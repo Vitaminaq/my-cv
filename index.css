@@ -12,11 +12,12 @@ a{
 #content
 {
   width: 720px;
-  height: 1700px;
+  height: 1600px;
 /*  border: solid 1px #ADADAD; */
   background-color: #f7f7f7;
   margin: 0 auto;
   color: gray;
+  font-size: 14px;
 }
 #title{
   height: 50px;
@@ -54,9 +55,6 @@ a{
   height: auto;
   margin: 0 auto;
 }
-.mes-title{
-  color: #1296db;
-}
 .mes-title img{
   width: 28px;
   height: 28px;
@@ -68,21 +66,23 @@ a{
   left: 40px;
   top: 5px;
 }
-.person-mes h4{
+.mes-title{
   padding-top: 40px;
   margin-top: 20px;
   display: block;
   position: relative;
+  font-size: 19px; 
+  color: #1296db;
 }
 .mes-detail
 {
   height: 120px;
   width: 100%;
-  font-size: 14px;
+ /* font-size: 14px;*/
   position: relative;
 }
 .mes-detail ul{
-  width: 530px;
+  width: 70%;
 }
 .mes-detail ul li{
   list-style-type: none;
@@ -93,8 +93,8 @@ a{
 }
 .mes-detail ul .mes-left{
  float: left;
- margin-right: 60px;
- width: 37.7%;
+ margin-right: 10px;
+ width: 50%;
 }
 #photo{
   position: absolute;
@@ -109,9 +109,10 @@ a{
 }
 .other-mes{
   width: 100%;
-  font-size: 14px;
+ /* font-size: 14px;*/
 }
 .other-mes-header{
+  width: 100%;
   font-weight: bold;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -120,11 +121,13 @@ a{
   display: inline-block;
 }
 .header-first{
-  width: 190px;
+  width: 25%;
+}
+.header-middle{
+  width: 44%;
 }
 .header-last{
-  width: 100px;
-  margin-left: 90px;
+  width: 25%;
 }
 .other-mes-title{
   padding-bottom: 5px;
