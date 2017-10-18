@@ -1,0 +1,148 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/*li{
+  list-style: none;
+}*/
+a{
+  text-decoration: none;
+  color: gray;
+}
+#content
+{
+  width: 720px;
+  height: 1580px;
+/*  border: solid 1px #ADADAD; */
+  background-color: #f7f7f7;
+  margin: 0 auto;
+  color: gray;
+}
+#title{
+  height: 50px;
+  text-align: center;
+}
+#title span{
+  display: inline-block;
+}
+#title #first-title{
+  font-size: 36px;
+  font-weight: bold;
+}
+#title #last-title{
+  margin-left: 20px;
+  font-size: 25px;
+}
+#cut-line{
+  height: 25px;
+  width: 100%;
+}
+#cut-line-left,#cut-line-right{
+  display: inline-block;
+  height: 25px;
+  background-color: #1296db;
+}
+#cut-line-left{
+  width: 40px;
+  margin-right: 5px;
+}
+#cut-line-right{
+  width: 670px;
+}
+#person-mes{
+  width: 600px;
+  height: auto;
+  margin: 0 auto;
+}
+.mes-title{
+  color: #1296db;
+}
+.mes-title img{
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 0;
+}
+.mes-title span{
+  position: absolute;
+  left: 40px;
+  top: 5px;
+}
+#person-mes h4{
+  padding-top: 40px;
+  margin-top: 20px;
+  display: block;
+  position: relative;
+}
+.mes-detail
+{
+  height: 120px;
+  width: 100%;
+  font-size: 14px;
+  position: relative;
+}
+.mes-detail ul{
+  width: 70%;
+}
+.mes-detail ul li{
+  list-style-type: none;
+  margin-top: 5px;
+}
+.mes-detail ul .mes-left{
+ float: left;
+ margin-right: 60px;
+ width: 200px;
+}
+#photo{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 90px;
+  height: 110px;
+}
+#photo img{
+  width: 90px;
+  height: 110px;
+}
+.other-mes{
+  width: 100%;
+  font-size: 14px;
+}
+.other-mes-header{
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.other-mes-header span{
+  display: inline-block;
+}
+.header-first{
+  width: 190px;
+}
+.header-last{
+  width: 100px;
+  margin-left: 90px;
+}
+.other-mes-title{
+  padding-bottom: 5px;
+}
+.practice-steep-content{
+  padding-left: 18px;
+}
+.practice-steep li{
+  list-style-type: disc;
+  line-height: 22px;
+}
+.other-mes-title1{
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.mes-title #cursorily{
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 4px;
+}
+#blog{
+  margin-top: 10px;
+}
