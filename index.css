@@ -12,7 +12,7 @@ a{
 #content
 {
   width: 720px;
-  height: 1580px;
+  height: 1700px;
 /*  border: solid 1px #ADADAD; */
   background-color: #f7f7f7;
   margin: 0 auto;
@@ -43,14 +43,14 @@ a{
   background-color: #1296db;
 }
 #cut-line-left{
-  width: 40px;
+  width: 5.55555%;
   margin-right: 5px;
 }
 #cut-line-right{
-  width: 670px;
+  width: 93.05%;
 }
-#person-mes{
-  width: 600px;
+.person-mes{
+  width: 83.33333%;
   height: auto;
   margin: 0 auto;
 }
@@ -68,7 +68,7 @@ a{
   left: 40px;
   top: 5px;
 }
-#person-mes h4{
+.person-mes h4{
   padding-top: 40px;
   margin-top: 20px;
   display: block;
@@ -82,16 +82,19 @@ a{
   position: relative;
 }
 .mes-detail ul{
-  width: 70%;
+  width: 530px;
 }
 .mes-detail ul li{
   list-style-type: none;
   margin-top: 5px;
+  float: right;
+  width: 37.7%;
+  text-align: left;
 }
 .mes-detail ul .mes-left{
  float: left;
  margin-right: 60px;
- width: 200px;
+ width: 37.7%;
 }
 #photo{
   position: absolute;
@@ -117,10 +120,10 @@ a{
   display: inline-block;
 }
 .header-first{
-  width: 190px;
+  width: 26.38888%;
 }
 .header-last{
-  width: 100px;
+  width: 13.88888%;
   margin-left: 90px;
 }
 .other-mes-title{
@@ -141,8 +144,8 @@ a{
   width: 28px;
   height: 28px;
   position: absolute;
-  top: 2.5px;
+  top: 4px;
 }
-#blog{
+.blog{
   margin-top: 10px;
 }
