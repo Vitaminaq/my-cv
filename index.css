@@ -12,7 +12,7 @@ a{
 #content
 {
   width: 720px;
-  height: 1600px;
+  height:auto;
 /*  border: solid 1px #ADADAD; */
   background-color: #f7f7f7;
   margin: 0 auto;
@@ -39,16 +39,16 @@ a{
   width: 100%;
 }
 #cut-line-left,#cut-line-right{
-  display: inline-block;
   height: 25px;
   background-color: #1296db;
 }
 #cut-line-left{
   width: 5.55555%;
-  margin-right: 5px;
+  float: left;
 }
 #cut-line-right{
   width: 93.05%;
+  float: right;
 }
 .person-mes{
   width: 83.33333%;
@@ -151,4 +151,7 @@ a{
 }
 .blog{
   margin-top: 10px;
+}
+#footer{
+	margin-bottom: 10px;
 }
