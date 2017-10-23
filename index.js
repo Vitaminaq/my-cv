@@ -4,9 +4,6 @@ window.onload = function () {
     content.style.width = '100%';
     content.style.fontSize = '19' + 'px';
   }
-  document.body.ontouchmove = function (e) {
-      e.preventDefault();
-  };
   document.addEventListener('touchstart', touchSatrtFunc, false);
   var _ss = document.getElementById("content");
     _ss.ontouchmove = function (ev) {
@@ -54,7 +51,6 @@ function touchSatrtFunc(evt) {
         //记录触点初始位置  
         startX = x;
         startY = y;
-        console.log(startY,startX);
     } catch (e) {
         alert('touchSatrtFunc：' + e.message);
     }
