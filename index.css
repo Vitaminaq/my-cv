@@ -2,14 +2,6 @@
   margin: 0;
   padding: 0;
 }
-body
-{
-  height:100%;
-  overflow: hidden;
-}
-/*li{
-  list-style: none;
-}*/
 a{
   text-decoration: none;
   color: gray;
@@ -17,7 +9,7 @@ a{
 #content
 {
   width: 720px;
-  height:1600px;
+  height:100%;
 /*  border: solid 1px #ADADAD; */
   background-color: #f7f7f7;
   margin: 0 auto;
