@@ -24,8 +24,8 @@ function touchSatrtFunc(evt) {
     }
 }
   document.addEventListener('touchstart', touchSatrtFunc, false);
-  var _ss = document.getElementById("content");
-    _ss.ontouchmove = function (ev) {
+  // var _ss = document.getElementById("content");
+  document.body.ontouchmove = function (ev) {
         var _point = ev.touches[0],
         _top = _ss.scrollTop;
         // 什么时候到底部
@@ -53,6 +53,7 @@ function touchSatrtFunc(evt) {
         //     }
         // } 
         else if (_top > 0 && _top < _bottomFaVal) {
+
             ev.stopPropagation();
         } else {
             ev.preventDefault();
