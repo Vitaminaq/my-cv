@@ -32,6 +32,9 @@ function touchSatrtFunc(evt) {
         var _bottomFaVal = _ss.scrollHeight - _ss.offsetHeight;
         // 到达顶端
         if (_top === 0) {
+        	if(_point.length === 2) {
+        		ev.preventDefault();
+        	}
             // 阻止向下滑动
             if (_point.clientY > startY) {
                 ev.preventDefault();
@@ -40,17 +43,19 @@ function touchSatrtFunc(evt) {
                 // 正常执行
                 ev.stopPropagation();
             }
-        } else if (_top === _bottomFaVal) {
-            // 到达底部
-            // 阻止向上滑动
-            if (_point.clientY < startY) {
-                ev.preventDefault();
-            } else {
-                // 阻止冒泡
-                // 正常执行
-                ev.stopPropagation();
-            }
-        } else if (_top > 0 && _top < _bottomFaVal) {
+        }
+        //  else if (_top === _bottomFaVal) {
+        //     // 到达底部
+        //     // 阻止向上滑动
+        //     if (_point.clientY < startY) {
+        //         ev.preventDefault();
+        //     } else {
+        //         // 阻止冒泡
+        //         // 正常执行
+        //         ev.stopPropagation();
+        //     }
+        // } 
+        else if (_top > 0 && _top < _bottomFaVal && _point.clientY < startY) {
             ev.stopPropagation();
         } else {
             ev.preventDefault();
