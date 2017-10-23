@@ -73,9 +73,9 @@ a{
 }
 .mes-detail
 {
-  height: 120px;
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 .mes-detail ul{
   width: 70%;
