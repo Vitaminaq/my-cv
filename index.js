@@ -14,8 +14,8 @@ function touchSatrtFunc(evt) {
 	{
 	    //evt.preventDefault(); //阻止触摸时浏览器的缩放、滚动条滚动等  
 	    var touch = evt.touches[0]; //获取第一个触点  
-        var x = Number(touch.pageX); //页面触点X坐标  
-        var y = Number(touch.pageY); //页面触点Y坐标  
+        var x = Number(touch.clientX); //页面触点X坐标  
+        var y = Number(touch.clientY); //页面触点Y坐标  
         //记录触点初始位置  
         startX = x;
         startY = y;
@@ -31,10 +31,7 @@ function touchSatrtFunc(evt) {
         // 什么时候到底部
         var _bottomFaVal = _ss.scrollHeight - _ss.offsetHeight;
         // 到达顶端
-        if (_top === 0) {
-        	if(_point.length === 2) {
-        		ev.preventDefault();
-        	}
+        if (_top <= 0) {
             // 阻止向下滑动
             if (_point.clientY > startY) {
                 ev.preventDefault();
@@ -55,7 +52,7 @@ function touchSatrtFunc(evt) {
         //         ev.stopPropagation();
         //     }
         // } 
-        else if (_top > 0 && _top < _bottomFaVal && _point.clientY < startY) {
+        else if (_top > 0 && _top < _bottomFaVal) {
             ev.stopPropagation();
         } else {
             ev.preventDefault();
