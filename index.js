@@ -4,4 +4,7 @@ window.onload = function () {
     content.style.width = '100%';
     content.style.fontSize = '19' + 'px';
   }
+  document.body.ontouchmove = function (e) {
+      e.preventDefault();
+  };
 }
