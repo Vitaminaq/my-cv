@@ -24,35 +24,36 @@ function touchSatrtFunc(evt) {
     }
 }
   document.addEventListener('touchstart', touchSatrtFunc, false);
-  // var _ss = document.getElementById("content");
-  document.body.ontouchmove = function (ev) {
+       var _ss = document.getElementById("content");
+        _ss.ontouchmove = function (ev) {
         var _point = ev.touches[0],
-        _top = _ss.scrollTop;
+        _top = _ss.scrollTop; 
+        console.log(_point);
         // 什么时候到底部
         var _bottomFaVal = _ss.scrollHeight - _ss.offsetHeight;
         // 到达顶端
-        if (_top <= 0) {
+        if (_top <= 1) {
             // 阻止向下滑动
+            console.log("fdsfs")
             if (_point.clientY > startY) {
+
                 ev.preventDefault();
             } else {
                 // 阻止冒泡
                 // 正常执行
                 ev.stopPropagation();
             }
-        }
-        //  else if (_top === _bottomFaVal) {
-        //     // 到达底部
-        //     // 阻止向上滑动
-        //     if (_point.clientY < startY) {
-        //         ev.preventDefault();
-        //     } else {
-        //         // 阻止冒泡
-        //         // 正常执行
-        //         ev.stopPropagation();
-        //     }
-        // } 
-        else if (_top > 0 && _top < _bottomFaVal) {
+        } else if (_top === _bottomFaVal) {
+            // 到达底部
+            // 阻止向上滑动
+            if (_point.clientY < startY) {
+                ev.preventDefault();
+            } else {
+                // 阻止冒泡
+                // 正常执行
+                ev.stopPropagation();
+            }
+        } else if (_top > 0 && _top < _bottomFaVal) {
 
             ev.stopPropagation();
         } else {
