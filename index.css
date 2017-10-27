@@ -78,6 +78,7 @@ a{
   overflow: hidden;
 }
 .mes-detail ul{
+  overflow: hidden;
   width: 70%;
 }
 .mes-detail ul li{
@@ -100,7 +101,7 @@ a{
   height: 128px;
 }
 #photo img{
-  width: 100%;
+  width: 95px;
   height: 128px;
 }
 .other-mes{
