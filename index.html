@@ -72,12 +72,25 @@
               <li>主要从事小程序，混合，以及原生开发</li>
               <li>小程序
                 <ol class="child-ul">
-                  <li>对现有小程序框架的对比，最终选择了uniapp进行开发</li>
-                  <li>项目重构：整个小组成员在不项目延期的情况下对老项目进行了多次面目全非的改动，比如升级ts，文件分类资源按需加载，页面模块化等。</li>
-                  <li>项目优化：修复老项目一些逻辑缺陷，重新分析资源的引入，降低入口文件大小，惰性加载，
-                    根据不同项目实际情况对ssr逻辑的重构（页面响应效果差不多提升了一两倍），以及一些资源的缓存。与原生联调对webview的优化。</li>
-                  <li>对第三方库的再封装，一些浏览器稀有api的研究，以及常用的vue组件的封装和插件的发布， 如：上拉加载，
-                    下拉刷新，axios等三方库的再次封装，toast等常见组件的封装。</li>
+                  <li>主要包括：框架调研，技术选型，业务开发，性能优化。</li>
+                  <li>项目主要采用uniapp进行开发，利用三方库依赖于webpack的特性，编写指定脚本，提取公共组件库，进行多小程序复用；利用vue-cli使用的inquirer
+                    包，进行多环境菜单区分。
+                  </li>
+                  <li>基础库的封装：支持ts的自定义状态管理，对基础组件拆分成视图层和逻辑层，工具库的提取等等。</li>
+                  <li>项目地址：微信搜索《小獴阅读》和《小獴阅读教师端》</li>
+                </ol>
+              </li>
+              <li>混合
+                <ol class="child-ul">
+                  <li>主要负责项目搭建，架构选择，与原生端的联调，以及做一些对h5性能的优化工作。</li>
+                  <li>结合实际情况，有针对性的做一些ssr策略以及缓存策略的调整，如：服务端只渲染静态节点，多用户缓存复用，根据路由定义不同的service-worker策略等。</li>
+                  <li>项目地址：应用商城下载《小獴阅读》</li>
+                </ol>
+              </li>
+              <li>原生
+                <ol class="child-ul">
+                  <li>选用uniapp的一个重要原因就是能打包成伪原生，用来做过一版，轻量级app完全可以驾驭，后期比较乏力。</li>
+                  <li>用flutter进行相关马甲包开发，对一些技术的探索，以及基础库的封装，如请求库，列表，上传七牛云，选择图片，toast，弹出评论框等等。</li>
                 </ol>
               </li>
             </ul>
@@ -97,7 +110,7 @@
                   <li>正常的产品迭代，以及日常维护，基础库的维护。目前h5在这个hybrid app中占据近50%的比例，囊括了很多流量大的页面。</li>
                   <li>项目重构：整个小组成员在不项目延期的情况下对老项目进行了多次面目全非的改动，比如升级ts，文件分类资源按需加载，页面模块化等。</li>
                   <li>项目优化：修复老项目一些逻辑缺陷，重新分析资源的引入，降低入口文件大小，惰性加载，
-                    根据不同项目实际情况对ssr逻辑的重构（页面响应效果差不多提升了一两倍），以及一些资源的缓存。与原生联调对webview的优化。</li>
+                    根据不同项目实际情况对ssr逻辑的重构，响应速度翻倍，以及一些资源的缓存。与原生联调对webview的优化。</li>
                   <li>对第三方库的再封装，一些浏览器稀有api的研究，以及常用的vue组件的封装和插件的发布， 如：上拉加载，
                     下拉刷新，axios等三方库的再次封装，toast等常见组件的封装。</li>
                 </ol>
@@ -108,7 +121,7 @@
                     <li>对原有首页项目使用了ts+prettier等重构，逐步把代码迁移至新模式和对老代码瘦身，对其webpack 4.0以下的项目进行升级接入ts。</li>
                   </ol>
                 </li>
-              <li>一些活动落地页的开发，以及开发部分后台管理模块。</li>
+              <li>一些活动落地页，以及部分后台管理模块开发。</li>
               <li>利用taro，开发与现有业务相关联的一套代码多端小程序（主打微信小程序）。
                 <ol class="child-ul">
                   <li>包括：框架的调研，项目的搭建，前端各类逻辑的编写与实现，与后端对接协商api，各种微信权限验证获取，实现canvas动态生成用户卡片等全过程。</li>
@@ -180,7 +193,7 @@
             </div>
             <div class="practice-steep-content">
               <ul class="practice-steep">
-                <li>项目大体为微信网上商城开发，主要由两人负责，我负责所有前端页面的呈现；</li>
+                <li>项目大体为微信公众号网上商城开发，主要由两人负责，我负责所有前端页面的呈现；</li>
                 <li>主要用到的是vue.js框架，vue-cli脚手架，webpack打包工具，以及git，github。</li>
                 <li>主要模块：商品列表展示页，商品详情页，购物车页，订单支付页，个人中心，收货地址管理，物流详情，订单的四种状态（未支付，已支付，待收货，已收货），后台管理及其相关功能。</li>
                 <li>主要用到的插件：vue-area（地址省市区选择插件），echarts（后台销量数据的折线或圆柱图展示），vue-toast（用户操作的提示），上拉刷新下拉加载，轮播图等，以及一些特定要求自己编写的插件。
@@ -207,20 +220,12 @@
           </div>
           <h4 class="mes-title">
             <img src="images/campus.png" />
-            <span>校内项目（Campus）</span>
+            <span>校内学习（Campus）</span>
           </h4>
           <div class="other-mes">
-            <div class="other-mes-header">
-              <span class="header-first">2016.03 - 2016.03</span>
-              <span class="header-middle">湖南科技大学逸夫楼</span>
-              <span class="header-last"></span>
-            </div>
             <div class="practice-steep-content">
               <ul class="practice-steep">
-                <li>项目大体为一个完全仿qq的web实时聊天网页app。</li>
-                <li>主要用到的:基本知识，jq，php，简易mysql以及wampserve。</li>
-                <li>主要模块：登录注册模块，会话列表，好友列表，以及空间客户端。</li>
-                <li>原理：通过不断的向数据库轮询取数据的方式来模拟在线聊天，后来通过websocket技术进行了改进。</li>
+                <li>会利用平时学到的知识举一反三，进行小模块的开发，如：实时聊天系统，论坛等等</li>
               </ul>
             </div>
           <h4 class="mes-title">
@@ -231,7 +236,7 @@
             <div class="practice-steep-content">
               <ul>
                 <li>
-                  前端: 基本知识（html,css,js），JQ，vue，vue-ssr，typescript，react，react-next，微信小程序，git，webpack，rollup，flutter等。
+                  前端: 基本知识（html,css,js），JQ，vue，vue-ssr，typescript，react，react-next，微信小程序，git，webpack，rollup，flutter，uniapp等。
                 </li>
                 <li>后端部分：node.js，mysql，mongodb，一些基础的nginx转发，IIS搭建。</li>
               </ul>
