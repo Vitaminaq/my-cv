@@ -15,6 +15,7 @@ a{
   margin: 0 auto;
   color: gray;
   font-size: 14px;
+  padding-bottom: 40px;
 }
 #title{
   height: 50px;
@@ -109,9 +110,10 @@ a{
 }
 .other-mes-header{
   width: 100%;
+  color: #333;
   font-weight: bold;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .other-mes-header span{
   display: inline-block;
@@ -130,10 +132,11 @@ a{
 }
 .practice-steep-content{
   padding-left: 18px;
+  line-height: 30px;
 }
 .practice-steep li{
   list-style-type: disc;
-  line-height: 22px;
+  line-height: 30px;
 }
 .other-mes-title1{
   margin-top: 10px;
@@ -151,8 +154,15 @@ a{
 .footer{
 	margin-bottom: 10px;
 }
+.li-title {
+  color: #333;
+  font-weight: bold;
+}
 .child-ul {
   margin-left: 27px;
+  color: gray;
+  font-weight: 500;
+  line-height: 30px;
 }
 .practice-steep-two {
   margin-top: 10px;

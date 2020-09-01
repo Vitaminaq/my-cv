@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>web前端+肖鹏飞+湖南科技大学</title>
-  <link rel="stylesheet" type="text/css" href="/index.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
 <body>
@@ -18,7 +18,7 @@
     </div>
     <div class="person-mes">
       <h4 class="mes-title">
-        <img src="/images/person.png" />
+        <img src="images/person.png" />
         <span>个人信息（Personal Info）</span>
       </h4>
       <div class="mes-detail">
@@ -36,12 +36,12 @@
           <li class="mes-left"><span>工作经验：</span><span>三年以上</span></li>
         </ul>
         <div id="photo">
-          <img src="/images/tx.jpg" />
+          <img src="images/tx.jpg" />
         </div>
       </div>
 
       <h4 class="mes-title">
-        <img src="/images/eduction.png">
+        <img src="images/eduction.png">
         <span>教育背景（Eduction）</span>
       </h4>
       <div class="other-mes">
@@ -57,192 +57,211 @@
           </p>
         </div>
       </div>
-        <h4 class="mes-title company-title">
-          <img src="/images/company.png" />
-          <span>工作经历（Company）</span>
-        </h4>
+      <h4 class="mes-title">
+        <img id="cursorily" src="images/cursorily.png" />
+        <span>前端涉猎（Cursorily）</span>
+      </h4>
+      <div class="practice-steep-content">
+        <ul>
+          <li>
+            前端:
+            基本知识（html,css,js），JQ，vue，vue-ssr，typescript，react，react-next，微信小程序，git，webpack，rollup，flutter，uniapp等。
+          </li>
+          <li>后端：node.js，mysql(增删改查)，mongodb，基础的nginx转发，IIS搭建。</li>
+        </ul>
+      </div>
+      <h4 class="mes-title company-title">
+        <img src="images/company.png" />
+        <span>工作经历（Company）</span>
+      </h4>
+      <div class="other-mes">
+        <div class="other-mes-header">
+          <span class="header-first">2018.11 - 2019.09</span>
+          <span class="header-middle">智德工场(深圳)教育科技有限公司</span>
+          <span class="header-last">web前端</span>
+        </div>
+        <div class="practice-steep-content">
+          <ul class="practice-steep">
+            <li class="li-title">背景介绍
+              <ol class="child-ul">
+                <li>智德工场是一家由教育、图书发行与互联网三个行业的专家团队组建而成的新型互联网+教育科技图书公司，所开发的项目主要是为老师提供减负发展、监控学生学习阅读好工具。
+                  为家长学生提供依据部编版语文新课标搭建的社区化语文教育综合平台而打造的一系列app</li>
+              </ol>
+            </li>
+            <li>主要从事小程序，混合，以及原生开发</li>
+            <li class="li-title">微信小程序
+              <ol class="child-ul">
+                <li><span class="li-title">项目描述：</span>主要分为教师端和学生/家长端连个小程序，老师可以借助教师端发布打卡，作业，通知，阅读闯关等一系列学习行为，根据学生应答
+                行为，智能的计算出学生的学习详细数据，便于老师对每个学生学习质量的把控。学生可借助学生/家长端来完成老师相关任务，获得相关奖励，也可与同学们互相交流学习心得等。</li>
+                <li>主要负责：框架调研，技术选型，业务开发，性能优化。</li>
+                <li>项目主要采用uniapp进行开发，利用三方库依赖于webpack的特性，编写指定脚本，提取公共组件库，进行多小程序复用；利用vue-cli使用的inquirer
+                  包，进行多环境菜单区分。基础库的封装如：支持ts的自定义状态管理，对基础组件拆分成视图层和逻辑层，工具库的提取等等。
+                </li>
+                <li>主要模块：班级圈(动态，作业，通知，我的发表，班级文化)，帖子详情等众多重要模块，教师端和学生端各占一半的开发任务。</li>
+                <li>项目地址：微信搜索《小獴阅读》和《小獴阅读教师端》</li>
+              </ol>
+            </li>
+            <li class="li-title">混合开发
+              <ol class="child-ul">
+                <li>主要负责：项目搭建，架构选择，与原生端的联调，以及做一些对h5性能的优化工作。</li>
+                <li>结合实际情况，有针对性的做一些ssr策略以及缓存策略的调整，如：服务端只渲染静态节点，多用户缓存复用，根据路由定义不同的service-worker策略等。</li>
+                <li>项目地址：应用商城下载《小獴阅读》或直接访问<a href="http://www.wismo.cn/hybird/report/wrong-book">
+                  http://www.wismo.cn/hybird/report/wrong-book</a>等页面。</li>
+              </ol>
+            </li>
+            <li class="li-title">原生开发
+              <ol class="child-ul">
+                <li>选用uniapp的一个重要原因就是能打包成伪原生，轻量级app完全可以驾驭，后期比较乏力，主要负责学生发帖回复点赞等社区内容开发，占比三分之一左右。</li>
+                <li>独自负责用flutter进行相关马甲包开发，对一些技术的探索，以及基础库的封装，如请求库，列表，上传七牛云，选择图片，toast，弹出评论框等等。
+                  主要模块有登录注册，动态列表，图书馆，阅读闯关，我的，webview内嵌h5的微博详情页等。
+                </li>
+              </ol>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="other-mes">
+        <div class="other-mes-header">
+          <span class="header-first">2018.06 - 2019.10</span>
+          <span class="header-middle">万汇互联科技有限公司</span>
+          <span class="header-last">web前端开发工程师</span>
+        </div>
+        <div class="practice-steep-content">
+          <ul class="practice-steep">
+            <li class="li-title">背景介绍
+              <ol class="child-ul">
+                <li>准确的来讲应该称为FOLLOWME，是一个交易社区。全球不同国家的外汇交易用户可以通过FOLLOWME建立联系。在这个社区，用户可以分享交易经验，展示交易策略，
+                  与其他交易者一起交流，也可以支付一定的订阅费跟随优秀的交易员下单。</li>
+              </ol>
+            </li>
+            <li>主要从事原生h5混合项目开发，pc主站的维护和迭代，以及相关架构调整和优化。</li>
+            <li class="li-title">混合开发
+              <ol class="child-ul">
+                <li>正常的产品迭代，以及日常维护，基础库的维护。目前h5在这个hybrid app中占据近50%的比例，囊括了很多流量大的页面。</li>
+                <li>项目重构：整个小组成员在不项目延期的情况下对老项目进行了多次面目全非的改动，比如升级ts，文件分类资源按需加载，页面模块化等。</li>
+                <li>项目优化：修复老项目一些逻辑缺陷，重新分析资源的引入，降低入口文件大小，惰性加载，
+                  根据不同项目实际情况对ssr逻辑的重构，响应速度翻倍，以及一些资源的缓存。与原生联调对webview的优化。</li>
+                <li>对第三方库的再封装，一些浏览器稀有api的研究，以及常用的vue组件的封装和插件的发布， 如：上拉加载，
+                  下拉刷新，axios等三方库的再次封装，toast等常见组件的封装。</li>
+              </ol>
+            </li>
+            <li class="li-title">PC主站
+              <ol class="child-ul">
+                <li>pc主站比较庞大，分成了很多个子项目，主要负责产品迭代，组件库维护，老逻辑的优化以及架构升级。</li>
+                <li>对原有首页项目使用了ts+prettier等重构，逐步把代码迁移至新模式和对老代码瘦身，对其webpack 4.0以下的项目进行升级接入ts。</li>
+              </ol>
+            </li>
+            <li>一些活动落地页，以及部分后台管理模块开发。</li>
+            <li class="li-title">
+              微信小程序
+              <ol class="child-ul">
+                <li><span class="li-title">项目描述：</span>结合交易员在平台上的一些指数，生成本周交易运势签，也可查看别人的运势签，分享至微信。</li>
+                <li>利用taro，独立开发与现有业务相关联的一套代码多端小程序，包括：框架的调研，项目的搭建，前端各类逻辑的编写与实现，与后端对接协商api，
+                  各种微信权限验证获取，实现canvas动态生成用户卡片等全过程。</li>
+                <li>项目地址：微信搜索《Followme测交易运势》</li>
+              </ol>
+            </li>
+            <li>对于小工程模块，也会编写一些node端接口，自行对接前端。</li>
+            <li>上述项目地址：app请下载《Followme交易社区》，pc主站地址：<a href="https://www.followme.cn/">https://www.followme.cn</a></li>
+          </ul>
+        </div>
         <div class="other-mes">
           <div class="other-mes-header">
-            <span class="header-first">2018.11 - 2019.09</span>
-            <span class="header-middle">智德工场(深圳)教育科技有限公司</span>
+            <span class="header-first">2019.06 - 2019.10</span>
+            <span class="header-middle"></span>
             <span class="header-last">web前端</span>
           </div>
           <div class="practice-steep-content">
             <ul class="practice-steep">
-              <li>主要从事小程序，混合，以及原生开发</li>
-              <li>小程序
-                <ol class="child-ul">
-                  <li>主要包括：框架调研，技术选型，业务开发，性能优化。</li>
-                  <li>项目主要采用uniapp进行开发，利用三方库依赖于webpack的特性，编写指定脚本，提取公共组件库，进行多小程序复用；利用vue-cli使用的inquirer
-                    包，进行多环境菜单区分。
-                  </li>
-                  <li>基础库的封装：支持ts的自定义状态管理，对基础组件拆分成视图层和逻辑层，工具库的提取等等。</li>
-                  <li>项目地址：微信搜索《小獴阅读》和《小獴阅读教师端》</li>
-                </ol>
+              <li>闲暇空隙，采用rollup打包工具，开发了一点平时用到的vue插件。</li>
+              <li>vue-rescroll：全局滚动状态还原指令化管理。<a
+                  href="https://www.npmjs.com/package/vue-rescroll">https://www.npmjs.com/package/vue-rescroll</a>
               </li>
-              <li>混合
-                <ol class="child-ul">
-                  <li>主要负责项目搭建，架构选择，与原生端的联调，以及做一些对h5性能的优化工作。</li>
-                  <li>结合实际情况，有针对性的做一些ssr策略以及缓存策略的调整，如：服务端只渲染静态节点，多用户缓存复用，根据路由定义不同的service-worker策略等。</li>
-                  <li>项目地址：应用商城下载《小獴阅读》</li>
-                </ol>
+              <li>vue-images-lazy-load：图片懒加载指令化。<a
+                  href="https://www.npmjs.com/package/vue-images-lazy-load">https://www.npmjs.com/package/vue-images-lazy-load</a>
               </li>
-              <li>原生
-                <ol class="child-ul">
-                  <li>选用uniapp的一个重要原因就是能打包成伪原生，用来做过一版，轻量级app完全可以驾驭，后期比较乏力。</li>
-                  <li>用flutter进行相关马甲包开发，对一些技术的探索，以及基础库的封装，如请求库，列表，上传七牛云，选择图片，toast，弹出评论框等等。</li>
-                </ol>
+              <li>vue-lazy-store：一个简易版的vue状态管理包，支持完全体typescript。<a
+                  href="https://www.npmjs.com/package/vue-lazy-store">https://www.npmjs.com/package/vue-lazy-store</a>
+              </li>
+              <li>vue-pupop-toast：包括confirm，alert，loading，toast等常见的ui插件，支持ts，以及ts提示。<a
+                  href="https://www.npmjs.com/package/vue-pupop-toast">https://www.npmjs.com/package/vue-pupop-toast</a>
               </li>
             </ul>
-          </div> 
+            <ul class="practice-steep-two">
+              <li>学习flutter</li>
+            </ul>
+            <ul class="practice-steep-two">
+              <li>平时会利用老项目的一些页面做一些技术实践，后台node也采用了node+mysql重构。</li>
+              <li>主要用于当前热门技术实践，比如ssr改造，模块化，缓存优化，ts化等等。</li>
+              <li>github:<a href="https://github.com/Vitaminaq/cfsw-vue-cli3.0/tree/ssr-no-prefetch-modules">
+                  https://github.com/Vitaminaq/cfsw-vue-cli3.0/tree/ssr-no-prefetch-modules</a></li>
+              <li>
+                在线地址：<a href="http://129.28.167.2/blog/home">https://vitaminaq.cn/blog/home</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="other-mes">
           <div class="other-mes-header">
-            <span class="header-first">2018.06 - 2019.10</span>
-            <span class="header-middle">万汇互联科技有限公司</span>
-            <span class="header-last">web前端开发工程师</span>
+            <span class="header-first">2017.11 - 2018.03</span>
+            <span class="header-middle">湖北金拓维信息技术有限公司</span>
+            <span class="header-last">web前端</span>
           </div>
           <div class="practice-steep-content">
             <ul class="practice-steep">
-              <li>主要从事原生h5混合项目开发，pc主站的维护和迭代，以及相关架构调整和优化。</li>
-              <li>混合开发
-                <ol class="child-ul">
-                  <li>正常的产品迭代，以及日常维护，基础库的维护。目前h5在这个hybrid app中占据近50%的比例，囊括了很多流量大的页面。</li>
-                  <li>项目重构：整个小组成员在不项目延期的情况下对老项目进行了多次面目全非的改动，比如升级ts，文件分类资源按需加载，页面模块化等。</li>
-                  <li>项目优化：修复老项目一些逻辑缺陷，重新分析资源的引入，降低入口文件大小，惰性加载，
-                    根据不同项目实际情况对ssr逻辑的重构，响应速度翻倍，以及一些资源的缓存。与原生联调对webview的优化。</li>
-                  <li>对第三方库的再封装，一些浏览器稀有api的研究，以及常用的vue组件的封装和插件的发布， 如：上拉加载，
-                    下拉刷新，axios等三方库的再次封装，toast等常见组件的封装。</li>
-                </ol>
+              <li>主要参与一些PC端系统的开发。</li>
+              <li>在此期间，是非常快上手项目的实习生，也分担了大型系统构建的任务。</li>
+              <li>主要负责方面：开发前期配置文件的编写，界面的构建，大型文件树结构的构建（如：多级文件树的增删改查，以及预览上传等），参与界面的调整讨论，JQ框架Easyui的使用，以及修改他人代码的BUG等。</li>
+              <li>实习空余期间，也开始补充新的知识，如node等。</li>
+            </ul>
+          </div>
+        </div>
+        <div class="other-mes">
+          <div class="other-mes-header">
+            <span class="header-first">2017.06 - 2017.08</span>
+            <span class="header-middle">湖南阿茨特网络科技有限公司</span>
+            <span class="header-last">web前端</span>
+          </div>
+          <div class="practice-steep-content">
+            <ul class="practice-steep">
+              <li>项目大体为微信公众号网上商城开发，主要由两人负责，我负责所有前端页面的呈现；</li>
+              <li>主要用到的是vue.js框架，vue-cli脚手架，webpack打包工具，以及git，github。</li>
+              <li>主要模块：商品列表展示页，商品详情页，购物车页，订单支付页，个人中心，收货地址管理，物流详情，订单的四种状态（未支付，已支付，待收货，已收货），后台管理及其相关功能。</li>
+              <li>主要用到的插件：vue-area（地址省市区选择插件），echarts（后台销量数据的折线或圆柱图展示），vue-toast（用户操作的提示），上拉刷新下拉加载，轮播图等，以及一些特定要求自己编写的插件。
               </li>
-              <li>PC主站
-                  <ol class="child-ul">
-                    <li>pc主站比较庞大，分成了很多个子项目，主要负责产品迭代，组件库维护，老逻辑的优化以及架构升级。</li>
-                    <li>对原有首页项目使用了ts+prettier等重构，逐步把代码迁移至新模式和对老代码瘦身，对其webpack 4.0以下的项目进行升级接入ts。</li>
-                  </ol>
-                </li>
-              <li>一些活动落地页，以及部分后台管理模块开发。</li>
-              <li>利用taro，开发与现有业务相关联的一套代码多端小程序（主打微信小程序）。
-                <ol class="child-ul">
-                  <li>包括：框架的调研，项目的搭建，前端各类逻辑的编写与实现，与后端对接协商api，各种微信权限验证获取，实现canvas动态生成用户卡片等全过程。</li>
-                  <li>项目地址：微信搜索《Followme测交易运势》</li>
-                </ol>
-              </li>
-              <li>对于小工程模块，也会编写一些node端接口，自行对接前端。</li>
-              <li>上述项目地址：app请下载《Followme交易社区》，pc主站地址：<a href="https://www.followme.cn/">https://www.followme.cn</a></li>
+              <li>由于团队给力，气氛活跃，总的来说开发十分顺利，提前完成了任务</li>
+            </ul>
+          </div>
+        </div>
+        <div class="other-mes">
+          <div class="other-mes-header">
+            <span class="header-first">2018.03 - 2018.03</span>
+            <span class="header-middle"></span>
+            <span class="header-last">web前端</span>
+          </div>
+          <div class="practice-steep-content">
+            <ul class="practice-steep">
+              <li>目的：对之前实习所学知识的再实践，主要包括vue，代码封装，实践node知识，以及服务器搭建</li>
+              <li>类似于论坛的app。</li>
+              <li>主要用了：vue，nodejs，nginx，mongodb等。(浅层知识))</li>
+              <li>主要步骤：前期的分析和构建，脚手架的熟悉，项目的搭建，跨域配置，本地以及云服务器的搭建和部署。</li>
+              <li>感受：初步爬坑，一个问题可以卡到怀疑人生，幸好还是解决了。</li>
+            </ul>
+          </div>
+        </div>
+        <h4 class="mes-title">
+          <img src="images/campus.png" />
+          <span>校内学习（Campus）</span>
+        </h4>
+        <div class="other-mes">
+          <div class="practice-steep-content">
+            <ul class="practice-steep">
+              <li>会利用平时学到的知识举一反三，进行小模块的开发，如：实时聊天系统，论坛等等</li>
             </ul>
           </div>
           <div class="other-mes">
-            <div class="other-mes-header">
-              <span class="header-first">2019.06 - 2019.10</span>
-              <span class="header-middle"></span>
-              <span class="header-last">web前端</span>
-            </div>
-            <div class="practice-steep-content">
-              <ul class="practice-steep">
-                <li>闲暇空隙，采用rollup打包工具，开发了一点平时用到的vue插件。</li>
-                <li>vue-rescroll：全局滚动状态还原指令化管理。<a
-                    href="https://www.npmjs.com/package/vue-rescroll">https://www.npmjs.com/package/vue-rescroll</a>
-                </li>
-                <li>vue-images-lazy-load：图片懒加载指令化。<a
-                    href="https://www.npmjs.com/package/vue-images-lazy-load">https://www.npmjs.com/package/vue-images-lazy-load</a>
-                </li>
-                <li>vue-lazy-store：一个简易版的vue状态管理包，支持完全体typescript。<a
-                    href="https://www.npmjs.com/package/vue-lazy-store">https://www.npmjs.com/package/vue-lazy-store</a>
-                </li>
-                <li>vue-pupop-toast：包括confirm，alert，loading，toast等常见的ui插件，支持ts，以及ts提示。<a
-                  href="https://www.npmjs.com/package/vue-pupop-toast">https://www.npmjs.com/package/vue-pupop-toast</a>
-              </li>
-              </ul>
-              <ul class="practice-steep-two">
-                <li>学习flutter</li>
-              </ul>
-              <ul class="practice-steep-two">
-                <li>平时会利用老项目的一些页面做一些技术实践，后台node也采用了node+mysql重构。</li>
-                <li>主要用于当前热门技术实践，比如ssr改造，模块化，缓存优化，ts化等等。</li>
-                <li>github:<a
-                  href="https://github.com/Vitaminaq/cfsw-vue-cli3.0/tree/ssr-no-prefetch-modules">
-                  https://github.com/Vitaminaq/cfsw-vue-cli3.0/tree/ssr-no-prefetch-modules</a></li>
-                <li>
-                  在线地址：<a
-                  href="http://129.28.167.2/blog/home">http://129.28.167.2/blog/home</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="other-mes">
-            <div class="other-mes-header">
-              <span class="header-first">2017.11 - 2018.03</span>
-              <span class="header-middle">湖北金拓维信息技术有限公司</span>
-              <span class="header-last">web前端</span>
-            </div>
-            <div class="practice-steep-content">
-              <ul class="practice-steep">
-                <li>主要参与一些PC端系统的开发。</li>
-                <li>在此期间，是非常快上手项目的实习生，也分担了大型系统构建的任务。</li>
-                <li>主要负责方面：开发前期配置文件的编写，界面的构建，大型文件树结构的构建（如：多级文件树的增删改查，以及预览上传等），参与界面的调整讨论，JQ框架Easyui的使用，以及修改他人代码的BUG等。</li>
-                <li>实习空余期间，也开始补充新的知识，如node等。</li>
-              </ul>
-            </div>
-          </div>
-          <div class="other-mes">
-            <div class="other-mes-header">
-              <span class="header-first">2017.06 - 2017.08</span>
-              <span class="header-middle">湖南阿茨特网络科技有限公司</span>
-              <span class="header-last">web前端</span>
-            </div>
-            <div class="practice-steep-content">
-              <ul class="practice-steep">
-                <li>项目大体为微信公众号网上商城开发，主要由两人负责，我负责所有前端页面的呈现；</li>
-                <li>主要用到的是vue.js框架，vue-cli脚手架，webpack打包工具，以及git，github。</li>
-                <li>主要模块：商品列表展示页，商品详情页，购物车页，订单支付页，个人中心，收货地址管理，物流详情，订单的四种状态（未支付，已支付，待收货，已收货），后台管理及其相关功能。</li>
-                <li>主要用到的插件：vue-area（地址省市区选择插件），echarts（后台销量数据的折线或圆柱图展示），vue-toast（用户操作的提示），上拉刷新下拉加载，轮播图等，以及一些特定要求自己编写的插件。
-                </li>
-                <li>由于团队给力，气氛活跃，总的来说开发十分顺利，提前完成了任务</li>
-              </ul>
-            </div>
-          </div>
-          <div class="other-mes">
-            <div class="other-mes-header">
-              <span class="header-first">2018.03 - 2018.03</span>
-              <span class="header-middle"></span>
-              <span class="header-last">web前端</span>
-            </div>
-            <div class="practice-steep-content">
-              <ul class="practice-steep">
-                <li>目的：对之前实习所学知识的再实践，主要包括vue，代码封装，实践node知识，以及服务器搭建</li>
-                <li>类似于论坛的app。</li>
-                <li>主要用了：vue，nodejs，nginx，mongodb等。(浅层知识))</li>
-                <li>主要步骤：前期的分析和构建，脚手架的熟悉，项目的搭建，跨域配置，本地以及云服务器的搭建和部署。</li>
-                <li>感受：初步爬坑，一个问题可以卡到怀疑人生，幸好还是解决了。</li>
-              </ul>
-            </div>
-          </div>
-          <h4 class="mes-title">
-            <img src="/images/campus.png" />
-            <span>校内学习（Campus）</span>
-          </h4>
-          <div class="other-mes">
-            <div class="practice-steep-content">
-              <ul class="practice-steep">
-                <li>会利用平时学到的知识举一反三，进行小模块的开发，如：实时聊天系统，论坛等等</li>
-              </ul>
-            </div>
-          <h4 class="mes-title">
-            <img id="cursorily" src="/images/cursorily.png" />
-            <span>前端涉猎（Cursorily）</span>
-          </h4>
-          <div class="other-mes">
-            <div class="practice-steep-content">
-              <ul>
-                <li>
-                  前端: 基本知识（html,css,js），JQ，vue，vue-ssr，typescript，react，react-next，微信小程序，git，webpack，rollup，flutter，uniapp等。
-                </li>
-                <li>后端部分：node.js，mysql，mongodb，一些基础的nginx转发，IIS搭建。</li>
-              </ul>
-            </div>
             <h4 class="mes-title">
-              <img src="/images/self.png" />
+              <img src="images/self.png" />
               <span>自我评价（Self-assessment）</span>
             </h4>
             <div class="other-mes">
@@ -274,10 +293,14 @@
                   href="https://vitaminaq.github.io/my-cv">https://vitaminaq.github.io/my-cv</a> </span>
             </div>
             <div class="blog" class="footer">
+              <span>或国内地址：</span><span><a
+                  href="https://vitaminaq.cn/my-cv/index.html">https://vitaminaq.cn/my-cv/index.html</a> </span>
+            </div>
+            <div class="blog" class="footer">
               本简历pc端，手机端兼容
             </div>
           </div>
-          <script type="text/javascript" src="/index.js"></script>
+          <script type="text/javascript" src="index.js"></script>
 </body>
 
 </html>
