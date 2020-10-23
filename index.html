@@ -33,7 +33,7 @@
           <li><span>毕业学校：</span><span>湖南科技大学</span></li>
           <li class="mes-left"><span>住 址：</span><span>广东省深圳市宝安区</span></li>
           <li><span>学 历：</span><span>全日制本科</span></li>
-          <li class="mes-left"><span>工作经验：</span><span>三年以上</span></li>
+          <li class="mes-left"><span>工作经验：</span><span>三年</span></li>
         </ul>
         <div id="photo">
           <img src="images/tx.jpg" />
@@ -53,7 +53,7 @@
         <div class="other-mes-title"><span>主修课程：</span></div>
         <div>
           <p>
-            主修c语言，面向对象编程c++，java，安卓开发，操作系统，数据库，计算机网络，数据结构，软件工程，软件测试，Internet web等。
+            c语言，面向对象编程c++，java，安卓开发，操作系统，数据库，计算机网络，数据结构，软件工程，软件测试，Internet web等。
           </p>
         </div>
       </div>
@@ -94,25 +94,26 @@
                 <li><span class="li-title">项目描述：</span>主要分为教师端和学生/家长端两个小程序，老师可以借助教师端发布打卡，作业，通知，阅读闯关等一系列学习行为，根据学生应答
                 行为，智能的计算出学生的学习详细数据，便于老师对每个学生学习质量的把控。学生可借助学生/家长端来完成老师相关任务，获得相关奖励，也可与同学们互相交流学习心得等。</li>
                 <li>主要负责：框架调研，技术选型，业务开发，性能优化。</li>
-                <li>项目主要采用uniapp进行开发，利用三方库依赖于webpack的特性，编写指定脚本，提取公共组件库，进行多小程序复用；利用vue-cli使用的inquirer
-                  包，进行多环境菜单区分。基础库的封装如：支持ts的自定义状态管理，对基础组件拆分成视图层和逻辑层，工具库的提取，题型库封装(连线题，认读生字，阅读提升等各种)等等。
+                <li>项目主要采用uniapp进行开发，利用三方库依赖于webpack的特性，编写指定脚本，提取公共组件库，进行多小程序复用(大约节省百分之四十左右的开发时间)；利用vue-cli使用的inquirer
+                  包，进行多环境菜单区分(避免小程序开发配置的硬编码难题)。基础库的封装如：支持ts的自定义状态管理，对基础组件拆分成视图层和逻辑层，工具库的提取，
+                  题型库封装(连线题，认读生字，阅读提升等各种)等等。
                 </li>
-                <li>主要模块：班级圈(动态，作业，通知，我的发表，班级文化)，帖子详情，老师批改作业等众多重要模块，教师端和学生端各占一半的开发任务。</li>
+                <li>主要模块：班级圈(动态，作业，通知，我的发表，班级文化)，帖子详情，老师批改作业等众多模块。</li>
                 <li>项目地址：微信搜索《小獴阅读》和《小獴阅读教师端》</li>
               </ol>
             </li>
             <li class="li-title">混合开发
               <ol class="child-ul">
                 <li>主要负责：项目搭建，架构选择，与原生端的联调，以及做一些对h5性能的优化工作。</li>
-                <li>结合实际情况，有针对性的做一些ssr策略以及缓存策略的调整，如：服务端只渲染静态节点，多用户缓存复用，根据路由定义不同的service-worker策略等。</li>
+                <li>结合实际情况，有针对性的做一些ssr策略以及缓存策略的调整，如：服务端只渲染静态节点，多用户缓存复用，根据路由定义不同的service-worker策略以及ssr策略等。前端项目docker化的实践，docker脚本的编写等。</li>
                 <li>项目地址：应用商城下载《小獴阅读》或直接访问<a href="http://www.wismo.cn/hybird/report/wrong-book">
                   http://www.wismo.cn/hybird/report/wrong-book</a>等页面。</li>
               </ol>
             </li>
             <li class="li-title">原生开发
               <ol class="child-ul">
-                <li>选用uniapp的一个重要原因就是能打包成伪原生，轻量级app完全可以驾驭，后期比较乏力，主要负责学生发帖回复点赞等社区内容开发，占比三分之一左右。</li>
-                <li>独自负责用flutter进行相关马甲包开发，对一些技术的探索，以及基础库的封装，如请求库，列表，上传七牛云，选择图片，toast，弹出评论框等等。
+                <li>选用uniapp的一个重要原因就是能打包成伪原生，轻量级app完全可以驾驭，后期比较乏力，主要负责学生发帖回复点赞等社区内容开发。</li>
+                <li>用flutter进行相关马甲包开发，对一些技术的探索，以及基础库的封装，如请求库，列表，上传七牛云，选择图片，toast，弹出评论框等等。
                   主要模块有登录注册，动态列表，图书馆，阅读闯关，我的，webview内嵌h5的微博详情页等。
                 </li>
                 <li>项目地址：<a href="https://vitaminaq.cn/download/app/">
@@ -142,7 +143,7 @@
                 <li>正常的产品迭代，以及日常维护，基础库的维护。目前h5在这个hybrid app中占据近50%的比例，囊括了很多流量大的页面。</li>
                 <li>项目重构：整个小组成员在不项目延期的情况下对老项目进行了多次面目全非的改动，比如升级ts，文件分类资源按需加载，页面模块化等。</li>
                 <li>项目优化：修复老项目一些逻辑缺陷，重新分析资源的引入，降低入口文件大小，惰性加载，
-                  根据不同项目实际情况对ssr逻辑的重构，响应速度翻倍，以及一些资源的缓存。与原生联调对webview的优化。</li>
+                  根据不同项目实际情况对ssr逻辑的重构，响应速度翻倍，以及一些资源的缓存。与原生联调对webview的优化。根据神策统计，响应时长从平均7-8s降到1-2秒，快网情况下只需要100-300ms左右。</li>
                 <li>对第三方库的再封装，一些浏览器稀有api的研究，以及常用的vue组件的封装和插件的发布， 如：上拉加载，
                   下拉刷新，axios等三方库的再次封装，toast等常见组件的封装。</li>
               </ol>
@@ -169,46 +170,6 @@
         </div>
         <div class="other-mes">
           <div class="other-mes-header">
-            <span class="header-first">2019.06 - 2020.9</span>
-            <span class="header-middle"></span>
-            <span class="header-last">web前端</span>
-          </div>
-          <div class="practice-steep-content">
-            <ul class="practice-steep">
-              <li>闲暇空隙，采用rollup打包工具，开发了一点平时用到的vue插件。</li>
-              <li>vue-rescroll：全局滚动状态还原指令化管理。<a
-                  href="https://www.npmjs.com/package/vue-rescroll">https://www.npmjs.com/package/vue-rescroll</a>
-              </li>
-              <li>vue-images-lazy-load：图片懒加载指令化。<a
-                  href="https://www.npmjs.com/package/vue-images-lazy-load">https://www.npmjs.com/package/vue-images-lazy-load</a>
-              </li>
-              <li>vue-lazy-store：一个简易版的vue状态管理包，支持完全体typescript。<a
-                  href="https://www.npmjs.com/package/vue-lazy-store">https://www.npmjs.com/package/vue-lazy-store</a>
-              </li>
-              <li>vue-pupop-toast：包括confirm，alert，loading，toast等常见的ui插件，支持ts，以及ts提示。<a
-                  href="https://www.npmjs.com/package/vue-pupop-toast">https://www.npmjs.com/package/vue-pupop-toast</a>
-              </li>
-              <li>vue-audios：一款简易的音频播放+管理器。<a
-                href="https://www.npmjs.com/package/vue-audios">https://www.npmjs.com/package/vue-audios</a>
-              </li>
-            </ul>
-            <ul class="practice-steep-two">
-              <li>学习flutter：<a href="https://github.com/Vitaminaq/flutter-cfsw">
-                https://github.com/Vitaminaq/flutter-cfsw</a></li>
-            </ul>
-            <ul class="practice-steep-two">
-              <li>平时会利用老项目的一些页面做一些技术实践，后台node也采用了node+mysql重构。</li>
-              <li>主要用于当前热门技术实践，比如ssr改造，模块化，缓存优化，ts化等等。</li>
-              <li>github:<a href="https://github.com/Vitaminaq/cfsw-vue-cli3.0/tree/ssr-no-prefetch-modules">
-                  https://github.com/Vitaminaq/cfsw-vue-cli3.0/tree/ssr-no-prefetch-modules</a></li>
-              <li>
-                在线地址：<a href="http://129.28.167.2/blog/home">https://vitaminaq.cn/blog/home</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="other-mes">
-          <div class="other-mes-header">
             <span class="header-first">2017.11 - 2018.03</span>
             <span class="header-middle">湖北金拓维信息技术有限公司</span>
             <span class="header-last">web前端</span>
@@ -216,7 +177,7 @@
           <div class="practice-steep-content">
             <ul class="practice-steep">
               <li>主要参与一些PC端系统的开发。</li>
-              <li>在此期间，是非常快上手项目的实习生，也分担了大型系统构建的任务。</li>
+              <li>在此期间，是非常快上手项目的新人，也分担了大型系统构建的任务。</li>
               <li>主要负责方面：开发前期配置文件的编写，界面的构建，大型文件树结构的构建（如：多级文件树的增删改查，以及预览上传等），参与界面的调整讨论，JQ框架Easyui的使用，以及修改他人代码的BUG等。</li>
               <li>实习空余期间，也开始补充新的知识，如node等。</li>
             </ul>
@@ -230,61 +191,42 @@
           </div>
           <div class="practice-steep-content">
             <ul class="practice-steep">
-              <li>项目大体为微信公众号网上商城开发，主要由两人负责，我负责所有前端页面的呈现；</li>
-              <li>主要用到的是vue.js框架，vue-cli脚手架，webpack打包工具，以及git，github。</li>
+              <li>项目大体为微信公众号网上商城开发，首次采用了mvvm模式的框架，开发两人，一前一后。</li>
+              <li>工作历程：对于vue2.0稳定版的调研和学习，熟悉其环境以及各种三方库的接入和再封装等。</li>
               <li>主要模块：商品列表展示页，商品详情页，购物车页，订单支付页，个人中心，收货地址管理，物流详情，订单的四种状态（未支付，已支付，待收货，已收货），后台管理及其相关功能。</li>
-              <li>主要用到的插件：vue-area（地址省市区选择插件），echarts（后台销量数据的折线或圆柱图展示），vue-toast（用户操作的提示），上拉刷新下拉加载，轮播图等，以及一些特定要求自己编写的插件。
-              </li>
-              <li>由于团队给力，气氛活跃，总的来说开发十分顺利，提前完成了任务</li>
-            </ul>
-          </div>
-        </div>
-        <div class="other-mes">
-          <div class="other-mes-header">
-            <span class="header-first">2018.03 - 2018.03</span>
-            <span class="header-middle"></span>
-            <span class="header-last">web前端</span>
-          </div>
-          <div class="practice-steep-content">
-            <ul class="practice-steep">
-              <li>目的：对之前实习所学知识的再实践，主要包括vue，代码封装，实践node知识，以及服务器搭建</li>
-              <li>类似于论坛的app。</li>
-              <li>主要用了：vue，nodejs，nginx，mongodb等。</li>
-              <li>主要步骤：前期的分析和构建，脚手架的熟悉，项目的搭建，跨域配置，本地以及云服务器的搭建和部署。</li>
-              <li>感受：初步爬坑，一个问题可以卡到怀疑人生，幸好还是解决了。</li>
             </ul>
           </div>
         </div>
         <h4 class="mes-title">
           <img src="images/campus.png" />
-          <span>校内学习（Campus）</span>
+          <span>小收获（Study）</span>
         </h4>
         <div class="other-mes">
           <div class="practice-steep-content">
             <ul class="practice-steep">
-              <li>会利用平时学到的知识举一反三，进行小模块的开发，如：实时聊天系统，论坛等等</li>
+              <li>闲暇空隙，采用rollup以及vue-cli打包工具，开发了一点平时用到的vue插件。</li>
+              <li>vue-rescroll：全局滚动状态还原指令化管理。</li>
+              <li>vue-images-lazy-load：图片懒加载指令化。</li>
+              <li>vue-lazy-store：阅读vue和vuex源码集成出的一款支持typescript的状态管理包。</li>
+              <li>vue-pupop-toast：包括confirm，alert，loading，toast等常见的编程式ui插件，支持ts。</li>
+              <li>vue-audios：一款简易的音频播放+管理器。</li>
             </ul>
           </div>
+        </div>
+        <div class="other-mes">
           <div class="other-mes">
             <h4 class="mes-title">
               <img src="images/self.png" />
               <span>自我评价（Self-assessment）</span>
             </h4>
             <div class="other-mes">
-              <div class="other-mes-title"><span>前端经历：</span></div>
-              <p>
-                从大一下学期开始接触前端，也没大牛带，从w3c网，到红皮书，再到现在一只菜鸟，一路摸爬滚打，坐井观天时，就偷偷去翻别人的博客，贴吧，看下大神们的学习历程。
-              </p>
-              <div class="other-mes-title"><span>专业评价：</span></div>
-              <p>
-                有良好的编码风格，能编写高质量代码，能解决浏览器兼容问题，能编写移动端适配代码，能很好的利用前端各类框架。
-              </p>
-              <div class="other-mes-title1"><span>其他评价：</span></div>
-              <p>
-                具有良好的数学和计算机基础知识，较强的数理分析、逻辑推理和再学习能力。
-                自学能力强，解决问题效率高。
-                积极进取，勇于挑战，为人热情可靠，工作勤奋刻苦，有出色的团队意识，抗压能力和强烈的责任感。
-              </p>
+              <div class="other-mes-title"><span>前端经历：</span><span>从w3c网，到红皮书，自学多载，归来仍是少年。</span></div>
+              <div class="other-mes-title">
+                <span>自我评价：</span>
+                <span>
+                  有良好的编码风格，能编写高质量代码，能解决浏览器兼容问题，能编写移动端适配代码，能很好的利用前端各类框架，有强烈的学习渴望以及对新技术的敏感。
+                </span>
+              </div>
             </div>
             <div class="blog">
               <span>github：</span><span><a href="https://github.com/Vitaminaq">https://github.com/Vitaminaq</a> </span>
