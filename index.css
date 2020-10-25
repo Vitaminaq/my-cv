@@ -8,7 +8,7 @@ a{
 }
 #content
 {
-  width: 720px;
+  width: 900px;
   height:100%;
 /*  border: solid 1px #ADADAD; */
   background-color: #f7f7f7;
@@ -41,15 +41,15 @@ a{
   background-color: #1296db;
 }
 #cut-line-left{
-  width: 5.55555%;
+  width: 3%;
   float: left;
 }
 #cut-line-right{
-  width: 93.05%;
+  width: 95%;
   float: right;
 }
 .person-mes{
-  width: 83.33333%;
+  width: 90%;
   height: auto;
   margin: 0 auto;
 }

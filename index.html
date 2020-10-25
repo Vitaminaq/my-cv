@@ -50,12 +50,6 @@
           <span class="header-middle">湖南科技大学</span>
           <span class="header-last">信息安全</span>
         </div>
-        <div class="other-mes-title"><span>主修课程：</span></div>
-        <div>
-          <p>
-            c语言，面向对象编程c++，java，安卓开发，操作系统，数据库，计算机网络，数据结构，软件工程，软件测试，Internet web等。
-          </p>
-        </div>
       </div>
       <h4 class="mes-title">
         <img id="cursorily" src="images/cursorily.png" />
@@ -63,11 +57,8 @@
       </h4>
       <div class="practice-steep-content">
         <ul>
-          <li>
-            前端:
-            基本知识（html,css,js），JQ，vue，vue-ssr，typescript，react，react-next，微信小程序，git，webpack，rollup，flutter，uniapp，docker等。
-          </li>
-          <li>后端：node.js，mysql(增删改查)，mongodb，基础的nginx转发，IIS搭建。</li>
+          <li>熟练: 基本知识（HTML,CSS,JavaScript)，Vue.js，服务端渲染，Typescirpt，微信小程序，webpack等。</li>
+          <li>掌握：node.js，react，flutter，uniapp，docker，mysql，nginx。</li>
         </ul>
       </div>
       <h4 class="mes-title company-title">
@@ -76,48 +67,42 @@
       </h4>
       <div class="other-mes">
         <div class="other-mes-header">
-          <span class="header-first">2019.11 - 2020.09</span>
+          <span class="header-first">2019.11 - 2020.10</span>
           <span class="header-middle">智德工场(深圳)教育科技有限公司</span>
           <span class="header-last">web前端</span>
         </div>
         <div class="practice-steep-content">
           <ul class="practice-steep">
-            <li class="li-title">背景介绍
-              <ol class="child-ul">
-                <li>智德工场是一家由教育、图书发行与互联网三个行业的专家团队组建而成的新型互联网+教育科技图书公司，所开发的项目主要是为老师提供减负发展、监控学生学习阅读好工具。
-                  为家长学生提供依据部编版语文新课标搭建的社区化语文教育综合平台而打造的一系列app。</li>
-              </ol>
-            </li>
-            <li>主要从事小程序，混合，以及原生开发</li>
+            <li>主要从事小程序，混合，以及原生开发，负责框架调研，技术选型，业务开发，性能优化，推动技术架构的落地和更新。</li>
             <li class="li-title">微信小程序
               <ol class="child-ul">
-                <li><span class="li-title">项目描述：</span>主要分为教师端和学生/家长端两个小程序，老师可以借助教师端发布打卡，作业，通知，阅读闯关等一系列学习行为，根据学生应答
-                行为，智能的计算出学生的学习详细数据，便于老师对每个学生学习质量的把控。学生可借助学生/家长端来完成老师相关任务，获得相关奖励，也可与同学们互相交流学习心得等。</li>
-                <li>主要负责：框架调研，技术选型，业务开发，性能优化。</li>
-                <li>项目主要采用uniapp进行开发，利用三方库依赖于webpack的特性，编写指定脚本，提取公共组件库，进行多小程序复用(大约节省百分之四十左右的开发时间)；利用vue-cli使用的inquirer
-                  包，进行多环境菜单区分(避免小程序开发配置的硬编码难题)。基础库的封装如：支持ts的自定义状态管理，对基础组件拆分成视图层和逻辑层，工具库的提取，
-                  题型库封装(连线题，认读生字，阅读提升等各种)等等。
-                </li>
-                <li>主要模块：班级圈(动态，作业，通知，我的发表，班级文化)，帖子详情，老师批改作业等众多模块。</li>
-                <li>项目地址：微信搜索《小獴阅读》和《小獴阅读教师端》</li>
+                <li>公共组件库：利用vue-cli以及yarn特性，搭建多小程序共用的ts远程组件库，节省大约40%左右开发时间。</li>
+                <li>多环境脚本：利用inquirer编写打包脚本，避免小程序开发配置硬编码的常见问题，减少发布操作失误问题。</li>
+                <li>状态管理：编写支持ts的状态管理包，利用事件劫持，进行用户行为监测和跨页面通信。</li>
+                <li>代码复用：组件拆分成视图层和逻辑层，解决了ui特色导致组件复用难问题。工具函数利用rollup打包成库，封装基础业务基类，做到相似业务只需继承基类即可完成开发。</li>
+                <li>其他优化：图片懒加载，路由管理，复杂长列表切换优化，store按需注册等。</li>
+                <li>业务逻辑：社区型业务开发，题型库(连线题，认读生字，阅读提升，思维导图等)。</li>
+                <li>项目地址：微信搜索《小獴阅读》和《小獴阅读教师端》。</li>
               </ol>
             </li>
-            <li class="li-title">混合开发
+            <li class="li-title">混合开发：采用vue+ssr。
               <ol class="child-ul">
-                <li>主要负责：项目搭建，架构选择，与原生端的联调，以及做一些对h5性能的优化工作。</li>
-                <li>结合实际情况，有针对性的做一些ssr策略以及缓存策略的调整，如：服务端只渲染静态节点，多用户缓存复用，根据路由定义不同的service-worker策略以及ssr策略等。前端项目docker化的实践，docker脚本的编写等。</li>
+                <li>ssr策略：通过客户端传参分为全量ssr和静态ssr，改造ssr hook，对于静态ssr，服务端只渲染静态节点，即某个页面的节点对所有用户都适用；全量则做服务端数据预取，缓存利用率相对低一点。</li>
+                <li>缓存策略：服务端利用route-cache，对静态ssr渲染结果进行长期缓存。根据webpack打包特性(文件改变,hash改变,则缓存失效)，对静态文件进行强缓存一年。客户端提前进行数据预取，通过hash传参跳转h5,
+                  来达到静态节点缓存复用，如：微博详情页不会因为id不同而无法进行复用，h5路由接管时再替换成正确的路由，对于h5接收的ssr模板，安卓采用service-worker，进行ssr结果缓存，苹果尝试用appcache兼容。
+                </li>
+                <li>效果：混合开发采用静态ssr策略，实现了pwa离线以及秒开，分享至三方链接采用全量体验会更好，且有利于seo。</li>
+                <li>其他：前端项目docker化的实践，docker脚本的编写等。</li>
                 <li>项目地址：应用商城下载《小獴阅读》或直接访问<a href="http://www.wismo.cn/hybird/report/wrong-book">
                   http://www.wismo.cn/hybird/report/wrong-book</a>等页面。</li>
               </ol>
             </li>
             <li class="li-title">原生开发
               <ol class="child-ul">
-                <li>选用uniapp的一个重要原因就是能打包成伪原生，轻量级app完全可以驾驭，后期比较乏力，主要负责学生发帖回复点赞等社区内容开发。</li>
-                <li>用flutter进行相关马甲包开发，对一些技术的探索，以及基础库的封装，如请求库，列表，上传七牛云，选择图片，toast，弹出评论框等等。
+                <li>uniapp：利用uniapp跨平台策略开发初版app，包括：自定义tab的优化，利用plus高级特性，生成自定义tab覆盖在原生tab上，避免直接适用自定义tab带来的很多渲染问题;利用部分语法特性，解决不支持solt的组件封装问题等。</li>
+                <li>flutter：进行相关马甲包开发，对一些技术的探索，推动flutter的引入和学习，以及基础库的封装，如请求库，列表，上传七牛云，选择图片，toast，弹出评论框等。
                   主要模块有登录注册，动态列表，图书馆，阅读闯关，我的，webview内嵌h5的微博详情页等。
                 </li>
-                <li>项目地址：<a href="https://vitaminaq.cn/download/app/">
-                  https://vitaminaq.cn/download/app/</a></li>
               </ol>
             </li>
           </ul>
@@ -131,21 +116,14 @@
         </div>
         <div class="practice-steep-content">
           <ul class="practice-steep">
-            <li class="li-title">背景介绍
-              <ol class="child-ul">
-                <li>准确的来讲应该称为FOLLOWME，是一个交易社区。全球不同国家的外汇交易用户可以通过FOLLOWME建立联系。在这个社区，用户可以分享交易经验，展示交易策略，
-                  与其他交易者一起交流，也可以支付一定的订阅费跟随优秀的交易员下单。</li>
-              </ol>
-            </li>
             <li>主要从事原生h5混合项目开发，pc主站的维护和迭代，以及相关架构调整和优化。</li>
             <li class="li-title">混合开发
               <ol class="child-ul">
-                <li>正常的产品迭代，以及日常维护，基础库的维护。目前h5在这个hybrid app中占据近50%的比例，囊括了很多流量大的页面。</li>
-                <li>项目重构：整个小组成员在不项目延期的情况下对老项目进行了多次面目全非的改动，比如升级ts，文件分类资源按需加载，页面模块化等。</li>
-                <li>项目优化：修复老项目一些逻辑缺陷，重新分析资源的引入，降低入口文件大小，惰性加载，
-                  根据不同项目实际情况对ssr逻辑的重构，响应速度翻倍，以及一些资源的缓存。与原生联调对webview的优化。根据神策统计，响应时长从平均7-8s降到1-2秒，快网情况下只需要100-300ms左右。</li>
-                <li>对第三方库的再封装，一些浏览器稀有api的研究，以及常用的vue组件的封装和插件的发布， 如：上拉加载，
-                  下拉刷新，axios等三方库的再次封装，toast等常见组件的封装。</li>
+                <li>正常的产品迭代，以及日常维护，基础库的维护。</li>
+                <li>项目重构：老项目迁移至vue-cli3.0，接入ts+prettier，配置vscode工作区，提高代码质量，实现自动修复代码格式，做到多人统一开发。</li>
+                <li>项目优化：资源和文件库按需加载：如语言包分散至每个组件实例上，各种插件指令的局部注册，降低入口文件大小。页面模块化：根据require.context，全局store，路由等分散至每个页面中，便于页面移植，以及项目拆分。store惰性加载：改造路由钩子，进行按需注册module。
+                  对ssr逻辑的重构，响应速度翻倍，以及一些资源的缓存。与原生联调对webview的优化。根据神策统计，响应时长从平均7-8s降到1-2秒，快网情况下只需要100-300ms左右。由于性能不错h5占比近50%，囊括了很多流量大的页面。</li>
+                <li>对第三方库的再封装，一些浏览器稀有api的研究，如：IntersectionObserver等，以及常用的vue组件的封装和插件的发布， 如：上拉加载，下拉刷新，axios等三方库的再次封装，toast等常见组件的封装。</li>
               </ol>
             </li>
             <li class="li-title">PC主站
@@ -159,7 +137,7 @@
               微信小程序
               <ol class="child-ul">
                 <li><span class="li-title">项目描述：</span>结合交易员在平台上的一些指数，生成本周交易运势签，也可查看别人的运势签，分享至微信。</li>
-                <li>利用taro，独立开发与现有业务相关联的一套代码多端小程序，包括：框架的调研，项目的搭建，前端各类逻辑的编写与实现，与后端对接协商api，
+                <li>taro：独立开发与现有业务相关联的一套代码多端小程序，包括：框架的调研，项目的搭建，前端各类逻辑的编写与实现，与后端对接协商api，
                   各种微信权限验证获取，实现canvas动态生成用户卡片等全过程。</li>
                 <li>项目地址：微信搜索《Followme测交易运势》</li>
               </ol>
@@ -168,35 +146,6 @@
             <li>上述项目地址：app请下载《Followme交易社区》，pc主站地址：<a href="https://www.followme.cn/">https://www.followme.cn</a></li>
           </ul>
         </div>
-        <div class="other-mes">
-          <div class="other-mes-header">
-            <span class="header-first">2017.11 - 2018.03</span>
-            <span class="header-middle">湖北金拓维信息技术有限公司</span>
-            <span class="header-last">web前端</span>
-          </div>
-          <div class="practice-steep-content">
-            <ul class="practice-steep">
-              <li>主要参与一些PC端系统的开发。</li>
-              <li>在此期间，是非常快上手项目的新人，也分担了大型系统构建的任务。</li>
-              <li>主要负责方面：开发前期配置文件的编写，界面的构建，大型文件树结构的构建（如：多级文件树的增删改查，以及预览上传等），参与界面的调整讨论，JQ框架Easyui的使用，以及修改他人代码的BUG等。</li>
-              <li>实习空余期间，也开始补充新的知识，如node等。</li>
-            </ul>
-          </div>
-        </div>
-        <div class="other-mes">
-          <div class="other-mes-header">
-            <span class="header-first">2017.06 - 2017.08</span>
-            <span class="header-middle">湖南阿茨特网络科技有限公司</span>
-            <span class="header-last">web前端</span>
-          </div>
-          <div class="practice-steep-content">
-            <ul class="practice-steep">
-              <li>项目大体为微信公众号网上商城开发，首次采用了mvvm模式的框架，开发两人，一前一后。</li>
-              <li>工作历程：对于vue2.0稳定版的调研和学习，熟悉其环境以及各种三方库的接入和再封装等。</li>
-              <li>主要模块：商品列表展示页，商品详情页，购物车页，订单支付页，个人中心，收货地址管理，物流详情，订单的四种状态（未支付，已支付，待收货，已收货），后台管理及其相关功能。</li>
-            </ul>
-          </div>
-        </div>
         <h4 class="mes-title">
           <img src="images/campus.png" />
           <span>小收获（Study）</span>
@@ -204,7 +153,6 @@
         <div class="other-mes">
           <div class="practice-steep-content">
             <ul class="practice-steep">
-              <li>闲暇空隙，采用rollup以及vue-cli打包工具，开发了一点平时用到的vue插件。</li>
               <li>vue-rescroll：全局滚动状态还原指令化管理。</li>
               <li>vue-images-lazy-load：图片懒加载指令化。</li>
               <li>vue-lazy-store：阅读vue和vuex源码集成出的一款支持typescript的状态管理包。</li>
@@ -243,9 +191,6 @@
             <div class="blog" class="footer">
               <span>或国内地址：</span><span><a
                   href="https://vitaminaq.cn/my-cv/index.html">https://vitaminaq.cn/my-cv/index.html</a></span>
-            </div>
-            <div class="blog" class="footer">
-              本简历pc端，手机端兼容(ps：手机预览如果字体较小，请双手缩放)
             </div>
           </div>
           <script type="text/javascript" src="index.js"></script>
