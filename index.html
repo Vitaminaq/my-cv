@@ -26,14 +26,14 @@
           <li class="mes-left"><span>姓 名：</span><span>肖鹏飞</span></li>
           <li><span>出生年月：</span><span>1996.03</span></li>
           <li class="mes-left"><span>民 族：</span><span>汉</span></li>
-          <li><span>身 高：</span><span>172cm</span></li>
+          <li><span>身 高：</span><span>173cm</span></li>
           <li class="mes-left"><span>电 话：</span><span>13638422132</span></li>
           <li><span>政治面貌：</span><span>共青团员</span></li>
           <li class="mes-left"><span>邮 箱：</span><span>1109614355@qq.com</span></li>
           <li><span>毕业学校：</span><span>湖南科技大学</span></li>
-          <li class="mes-left"><span>住 址：</span><span>广东省深圳市宝安区</span></li>
+          <li class="mes-left"><span>住 址：</span><span>广东省深圳市龙华区</span></li>
           <li><span>学 历：</span><span>全日制本科</span></li>
-          <li class="mes-left"><span>工作经验：</span><span>三年</span></li>
+          <li class="mes-left"><span>工作经验：</span><span>四年半</span></li>
         </ul>
         <div id="photo">
           <img src="images/tx.jpg" />
@@ -65,6 +65,49 @@
         <img src="images/company.png" />
         <span>工作经历（Company）</span>
       </h4>
+      <!-- 高灯科技 -->
+      <div class="other-mes">
+        <div class="other-mes-header">
+          <span class="header-first">2020.11 - 2022.4</span>
+          <span class="header-middle">深圳高灯计算机科技有限公司-超能海豹部</span>
+          <span class="header-last">web前端</span>
+        </div>
+        <div class="practice-steep-content">
+          <ul class="practice-steep">
+            <li>部门主要负责b端c端公司因公消费场景业务开发，包括酒店，机票，打车，火车票，外卖，加油，发票等。</li>
+            <li>担任小组长职务，主要从事小程序，混合开发，大后台开发，负责项目把控，框架调研，技术选型，业务开发，性能优化，推动技术架构的落地和更新。</li>
+            <li class="li-title">微信小程序：原生，uniapp。
+              <ol class="child-ul">
+                <li>
+                  接入ts；优化gulp打包流程，引入别名；改写wecos对项目进行瘦身，构建时间从8分钟降低至20秒；改写westore使之支持miniprogram-computed；提取公共js，利用rollup，搭建基础工具库，编写相关测试脚本；
+                </li>
+                <li>编写ci工具，使小程序打包可以在jikens上进行，提升了发布和测试效率。</li>
+                <li>编写兼容库，使原生小程序近乎无缝迁移至uniapp，可打包成h5，钉钉小程序等。</li>
+                <li>编写yapi文档转ts类型文件插件，通过跑脚本自动生成接口对应的.d.ts文件，大幅缩减ts类型定义开发时间。</li>
+                <li>项目地址：微信搜索《超能海豹》。</li>
+              </ol>
+            </li>
+            <li class="li-title">混合开发：vite+vue3.0+ssr。
+              <ol class="child-ul">
+                <li>开源社区比较早期的使用vite+vue3.0去做服务端渲染的项目，通过url带参控制当前页面是否需要服务端预期数据，其他优化同上家方案。</li>
+                <li>利用vite特性做项目模块化和store按需注册，编写h5与原生以及小程序底层交互逻辑，利用hash特性，做到小程序端webview无刷新同步信息。</li>
+                <li>编写腾讯云ssr函数，支持一键部署腾讯云，用于短信链接直接打开小程序。</li>
+                <li>项目地址：应用商城下载《超能海豹》或直接访问<a
+                    href="https://h5-hybrid.kuaibaobao.com/welfare-active-bargain/bargain-home">
+                    https://h5-hybrid.kuaibaobao.com/welfare-active-bargain/bargain-home</a>等页面。</li>
+              </ol>
+            </li>
+            <li class="li-title">后台开发：vue+element，react+ant。
+              <ol class="child-ul">
+                <li>权限角色管理；react项目迁移至vite；项目按业务进行模块化，为后期的微前端拆分打下基础；</li>
+                <li>封装各类表单，列表组件，通过配置文件即可生成相关页面；封装列表加载hook；富文本编辑器添加实时预览操作；</li>
+              </ol>
+            </li>
+            <li>荣誉：最佳研发奖，优秀项目奖，绩效奖。</li>
+          </ul>
+        </div>
+      </div>
+      <!-- 智德工场 -->
       <div class="other-mes">
         <div class="other-mes-header">
           <span class="header-first">2019.11 - 2020.10</span>
@@ -87,24 +130,29 @@
             </li>
             <li class="li-title">混合开发：采用vue+ssr。
               <ol class="child-ul">
-                <li>ssr策略：通过客户端传参分为全量ssr和静态ssr，改造ssr hook，对于静态ssr，服务端只渲染静态节点，即某个页面的节点对所有用户都适用；全量则做服务端数据预取，缓存利用率相对低一点。</li>
-                <li>缓存策略：服务端利用route-cache，对静态ssr渲染结果进行长期缓存。根据webpack打包特性(文件改变,hash改变,则缓存失效)，对静态文件进行强缓存一年。客户端提前进行数据预取，通过hash传参跳转h5,
+                <li>ssr策略：通过客户端传参分为全量ssr和静态ssr，改造ssr hook，对于静态ssr，服务端只渲染静态节点，即某个页面的节点对所有用户都适用；全量则做服务端数据预取，缓存利用率相对低一点。
+                </li>
+                <li>
+                  缓存策略：服务端利用route-cache，对静态ssr渲染结果进行长期缓存。根据webpack打包特性(文件改变,hash改变,则缓存失效)，对静态文件进行强缓存一年。客户端提前进行数据预取，通过hash传参跳转h5,
                   来达到静态节点缓存复用，如：微博详情页不会因为id不同而无法进行复用，h5路由接管时再替换成正确的路由，对于h5接收的ssr模板，安卓采用service-worker，进行ssr结果缓存，苹果尝试用appcache兼容。
                 </li>
                 <li>效果：混合开发采用静态ssr策略，实现了pwa离线以及秒开，分享至三方链接采用全量体验会更好，且有利于seo。</li>
                 <li>其他：前端项目docker化的实践，docker脚本的编写等。</li>
                 <li>项目地址：应用商城下载《小獴阅读》或直接访问<a href="http://www.wismo.cn/hybird/report/wrong-book">
-                  http://www.wismo.cn/hybird/report/wrong-book</a>等页面。</li>
+                    http://www.wismo.cn/hybird/report/wrong-book</a>等页面。</li>
               </ol>
             </li>
             <li class="li-title">原生开发
               <ol class="child-ul">
-                <li>uniapp：利用uniapp跨平台策略开发初版app，包括：自定义tab的优化，利用plus高级特性，生成自定义tab覆盖在原生tab上，避免直接适用自定义tab带来的很多渲染问题;利用部分语法特性，解决不支持solt的组件封装问题等。</li>
+                <li>
+                  uniapp：利用uniapp跨平台策略开发初版app，包括：自定义tab的优化，利用plus高级特性，生成自定义tab覆盖在原生tab上，避免直接适用自定义tab带来的很多渲染问题;利用部分语法特性，解决不支持solt的组件封装问题等。
+                </li>
                 <li>flutter：进行相关马甲包开发，对一些技术的探索，推动flutter的引入和学习，以及基础库的封装，如请求库，列表，上传七牛云，选择图片，toast，弹出评论框等。
                   主要模块有登录注册，动态列表，图书馆，阅读闯关，我的，webview内嵌h5的微博详情页等。
                 </li>
               </ol>
             </li>
+            <li>荣誉：优秀员工奖。</li>
           </ul>
         </div>
       </div>
@@ -121,9 +169,12 @@
               <ol class="child-ul">
                 <li>正常的产品迭代，以及日常维护，基础库的维护。</li>
                 <li>项目重构：老项目迁移至vue-cli3.0，接入ts+prettier，配置vscode工作区，提高代码质量，实现自动修复代码格式，做到多人统一开发。</li>
-                <li>项目优化：资源和文件库按需加载：如语言包分散至每个组件实例上，各种插件指令的局部注册，降低入口文件大小。页面模块化：根据require.context，全局store，路由等分散至每个页面中，便于页面移植，以及项目拆分。store惰性加载：改造路由钩子，进行按需注册module。
-                  对ssr逻辑的重构，响应速度翻倍，以及一些资源的缓存。与原生联调对webview的优化。根据神策统计，响应时长从平均7-8s降到1-2秒，快网情况下只需要100-300ms左右。由于性能不错h5占比近50%，囊括了很多流量大的页面。</li>
-                <li>对第三方库的再封装，一些浏览器稀有api的研究，如：IntersectionObserver等，以及常用的vue组件的封装和插件的发布， 如：上拉加载，下拉刷新，axios等三方库的再次封装，toast等常见组件的封装。</li>
+                <li>
+                  项目优化：资源和文件库按需加载：如语言包分散至每个组件实例上，各种插件指令的局部注册，降低入口文件大小。页面模块化：根据require.context，全局store，路由等分散至每个页面中，便于页面移植，以及项目拆分。store惰性加载：改造路由钩子，进行按需注册module。
+                  对ssr逻辑的重构，响应速度翻倍，以及一些资源的缓存。与原生联调对webview的优化。根据神策统计，响应时长从平均7-8s降到1-2秒，快网情况下只需要100-300ms左右。由于性能不错h5占比近50%，囊括了很多流量大的页面。
+                </li>
+                <li>对第三方库的再封装，一些浏览器稀有api的研究，如：IntersectionObserver等，以及常用的vue组件的封装和插件的发布，
+                  如：上拉加载，下拉刷新，axios等三方库的再次封装，toast等常见组件的封装。</li>
               </ol>
             </li>
             <li class="li-title">PC主站
@@ -158,6 +209,7 @@
               <li>vue-lazy-store：阅读vue和vuex源码集成出的一款支持typescript的状态管理包。</li>
               <li>vue-pupop-toast：包括confirm，alert，loading，toast等常见的编程式ui插件，支持ts。</li>
               <li>vue-audios：一款简易的音频播放+管理器。</li>
+              <li>yapi-quicktype：自动拉去yapi文档内容生成接口相关的.d.ts文件。</li>
             </ul>
           </div>
         </div>
